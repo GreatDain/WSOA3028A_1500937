@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="icon" href="https://ewedit.files.wordpress.com/2019/12/baby-yoda-3.jpg">
+        <link rel="icon" href="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
         <title> Jozi Life </title>
         <script src="index.js"></script>
+        <script src="jquery-3.3.1.js"></script>
     </head>
     <body>
         <header>
-            <nav> <a href="index.html"> <img src="https://ewedit.files.wordpress.com/2019/12/baby-yoda-3.jpg" width="200px" height=100px> Jozi Life</a></nav>
+            <nav> <a href="index.html"> <img src="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png" width="200px" height=100px> Jozi Life</a></nav>
         </header>
 
             <a href="index.html"> Home </a>
@@ -20,7 +21,7 @@
             <a href="Blogs/DainBlog.html"> Dain's Entries </a>
             &nbsp;
 
-            <a href="Blogs/JoziBlog.html"> Jozi's Entries </a>
+            <a href="JoziBlogs/JoziBlog.html"> Jozi's Entries </a>
 
             <h1>
                 <nav>
@@ -31,7 +32,7 @@
             <section>
                 <article>
                     <p>
-                        I am the embodiment of the spirit of the city of Johannesburg, you can call me Jozi. One morning I woke up to find myself 40 years in the future, the modern day Johannesburg. I've been given the rare opportunity to see what I become in the future. People often wonder if they're younger self would be proud of who they had become, and I have the chance to find the answer. I'm a young spirit of Jozi living in an older, very different Jozi, and this is my website.
+                        I am the spirit of the city of Johannesburg, you can call me Jozi. I have this strange ability to randomly enter people's bodies but I control who I inhabit. I can experience their thoughts, actions and senses just for a few hours. And I'm here to tell you about my weird and wonderful-ish experiences living the lives of my inhabitants. Sit back, grab some popcorn and enjoy the exploration of my webpage. (NB! Be careful not to mess your devices with the popcorn flavouring)
                     </p>
                 </article>
             </section>
@@ -43,26 +44,30 @@
             </h1>
 
                 <h2> 
-                    Recent Entries by Dain:
+                    Recent blog entries by Dain:
                 </h2>
-                <p>
-                    This is where my personal blogs will be found.
-                </p>
+                
+                <button onclick="previousblogdain()"> previous blog </button>
+
+                <a id = "blog1" href="Blogs/2020/02/18/blog2.html"> 18.02.2020 - Character Decription (Updated) </a>
+                
+                <button onclick="nextblogdain()"> next blog </button>
 
             <h1>
                 <nav>
-                    <li> <a href="Blogs/JoziBlog.html"> Jozi's Blogs and Entries </a> </li>
+                    <li> <a href="JoziBlogs/JoziBlog.html"> Jozi's Blogs and Entries </a> </li>
                 </nav>
             </h1>
 
                 <h2> 
                     Recent Entries by Jozi:
                 </h2>
-                <p>
-                    This is where character blogs will be found.
-                </p>
 
-            <button type = "button" id = "btn" onclick="Button()"> My 1st Button </button>
+                <button onclick="previousblogjozi()"> previous blog </button>
+
+                <a id = "joziblog" href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>
+
+                <button onclick="nextblogjozi()"> next blog </button>
             
             <!--
                 <p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
