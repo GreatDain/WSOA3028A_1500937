@@ -97,11 +97,11 @@ function nextblogdain(){
     document.getElementById('blog1');
 
     const bloglinks = [
-        '<a href="Blogs/2020/02/18/blog2.html"> 17.02.2020 - Character Decription </a>',
-        '<a href="Blogs/2020/02/18/blog3.html"> 18.02.2020 - Through the ages of the browser wars </a>',
-        '<a href="Blogs/2020/02/25/blog4.html"> 25.02.2020 - Semantic Markup </a>',
-        '<a href="Blogs/2020/03/10/JavascriptBlog.html">10.03.2020 - Javascript, the "Yes Man" of programming languages </a>',
-        '<a href="Blogs/2020/04/7/FictionalCharacterWritingBlog.html">07.04.2020 - My first experiences with fictional blog writing and character development </a>'
+        '<a href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a>',
+        '<a href="Blogs/2020/05/30/Ethics-Morals-and-Law.html"> Ethics, Morals, and the Law </a>',
+        '<a href="Blogs/2020/05/30/Online-Learning.html"> Online Learning </a>',
+        '<a href="Blogs/2020/06/01/Neumorphism-and-Skeuomorphism-in-UI.html"> Neumorphism and Skeuomorphism in UI </a>',
+        '<a href="Blogs/2020/06/04/Terminator-AI-Inbound.html"> Terminator AI Inbound? </a>'
     ];
 
     if(i < bloglinks.length-1){
@@ -120,11 +120,11 @@ function previousblogdain(){
     document.getElementById('blog1');
 
     const bloglinks = [
-        '<a href="Blogs/2020/02/18/blog2.html"> 17.02.2020 - Character Decription </a>',
-        '<a href="Blogs/2020/02/18/blog3.html"> 18.02.2020 - Through the ages of the browser wars </a>',
-        '<a href="Blogs/2020/02/25/blog4.html"> 25.02.2020 - Semantic Markup </a>',
-        '<a href="Blogs/2020/03/10/JavascriptBlog.html">10.03.2020 - Javascript, the "Yes Man" of programming languages </a>',
-        '<a href="Blogs/2020/04/7/FictionalCharacterWritingBlog.html">07.04.2020 - My first experiences with fictional blog writing and character development </a>'
+        '<a href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a>',
+        '<a href="Blogs/2020/05/30/Ethics-Morals-and-Law.html"> Ethics, Morals, and the Law </a>',
+        '<a href="Blogs/2020/05/30/Online-Learning.html"> Online Learning </a>',
+        '<a href="Blogs/2020/06/01/Neumorphism-and-Skeuomorphism-in-UI.html"> Neumorphism and Skeuomorphism in UI </a>',
+        '<a href="Blogs/2020/06/04/Terminator-AI-Inbound.html"> Terminator AI Inbound? </a>'
     ];
 
     if(i <= 0){

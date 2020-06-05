@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" name="Jozi Life" content="This is a fictional character blog page about the city of Johannesburg as a spirit. It wonders around inhabiting the bodies of Johannesburg citiens and writes blogs about it's experiences. This webpage was created for the WSOA3028 course at the University of the Witwatersrand.">
+        <meta charset="utf-8" name="Decription" content="Jozi Life: Home Page">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="./css/main.css"/>
+        <link rel="stylesheet" href="./css/menu.css"/>
         <link rel="icon" href="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
         <title> Jozi Life </title>
-        <script src="index.js"></script>
-        <script src="jquery-3.3.1.js"></script>
+        <script src="./index.js"></script>
     </head>
     <body>
-        <header align = "center">
-            <nav> <a href="index.html"> <img src="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png" alt="Flag of Johannesburg" width="200px" height=100px></a></nav>
+        <header class="navigation">
+            <section id = "navigation_bar"> </section>
+
+            <script src="JavaScript/menu.js"></script>
+            <!-- <nav> <a href="index.html"> <img src="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png" alt="Flag of Johannesburg" width="200px" height=100px></a></nav>
 
             <h1> <u> JOZI LIFE </u> </h1>
 
@@ -22,14 +27,20 @@
             <a href="Blogs/DainBlog.html"> Dain's Entries </a>
             &nbsp;
 
-            <a href="JoziBlogs/JoziBlog.html"> Jozi's Entries </a>
+            <a href="JoziBlogs/JoziBlog.html"> Jozi's Entries </a> -->
 
         </header>
 
+        <aside>
+            <p>
+                <!-- Hi Fren -->
+            </p>
+        </aside>
+
             <nav>
-                <h1>
+                <h2>
                     <li> <a href="AboutMe/AboutMe.html"> About Me </a> </li>
-                </h1>
+                </h2>
             </nav>    
 
             <section>
@@ -42,37 +53,45 @@
 
             
             <nav>
-                <h1>
+                <h2>
                     <li> <a href="Blogs/DainBlog.html"> Dain's Blogs and Entries </a> </li>
-                </h1>
+                </h2>
             </nav>
             
 
-                <h2> 
+                <h3> 
                     Recent blog entries by Dain:
-                </h2>
-                
-                <button onclick="previousblogdain()"> previous blog </button>
+                </h3>
 
-                <a id = "blog1" href="Blogs/2020/02/18/blog2.html"> 18.02.2020 - Character Decription (Updated) </a>
+                <section class="container">
                 
-                <button onclick="nextblogdain()"> next blog </button>
+                    <a class="recents" id = "blog1" href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a>
+
+                </section>
+                <section class="buttons">
+                    <button class="prev_btn" onclick="previousblogdain()"> PREVIOUS BLOG </button>
+                    <button class="next_btn" onclick="nextblogdain()"> NEXT BLOG </button>
+                </section>
 
             <nav>
-                <h1>
+                <h2>
                     <li> <a href="JoziBlogs/JoziBlog.html"> Jozi's Blogs and Entries </a> </li>
-                </h1>
+                </h2>
             </nav>
 
-                <h2> 
+                <h3> 
                     Recent Entries by Jozi:
-                </h2>
+                </h3>
+                <section class="container">
 
-                <button onclick="previousblogjozi()"> previous blog </button>
+                    <a class="recents" id = "joziblog" href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>
+    
+                </section>
 
-                <a id = "joziblog" href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>
-
-                <button onclick="nextblogjozi()"> next blog </button>
+                <section class="buttons">
+                    <button class="prev_btn" onclick="previousblogjozi()"> PREVIOUS BLOG </button>
+                    <button class="next_btn" onclick="nextblogjozi()"> NEXT BLOG </button>
+                </section>
             
             <!--
                 <p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
@@ -82,5 +101,8 @@
 
         <img src="https://ewedit.files.wordpress.com/2019/12/baby-yoda-3.jpg">
         -->
+        <footer>
+            Background Image Credits: https://www.once.travel/tour/graffiti-tour-braamfontein/
+        </footer>
     </body>
 </html>
