@@ -1,5 +1,6 @@
 const navigation = document.getElementById("navigation_bar");
 
+if (document.URL.match("https://greatdain.github.io/WSOA3028A_1500937/") || document.URL.includes("index.html")){
 navigation.innerHTML = [
     // "<nav>",
     // "<a class=\"flag\" href=\"index.html\"> <img src=\"../../../../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png\" alt=\"Flag of Johannesburg\" width=\"200px\" height=\"100px\"></a>",
@@ -19,6 +20,7 @@ navigation.innerHTML = [
     "</nav>",
 
 ].join("\n");
+}
 
 if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.html") || document.URL.includes("JoziBlog.html")){
     navigation.innerHTML = [
