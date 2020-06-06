@@ -141,7 +141,8 @@ function nextblogjozi(){
 
     const bloglinks = [
         '<a href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>',
-        '<a href="JoziBlogs/2020/03/22/Fast-food-and-earthquakes-1.html"> Fast food and earthquakes - Part 1</a>'
+        '<a href="JoziBlogs/2020/03/22/Fast-food-and-earthquakes-1.html"> Fast food and earthquakes - Part 1</a>',
+        '<a href="JoziBlogs/2020/03/15/What-a-DISASTER-2.html"> What a DISASTER - Part2 </a>'
     ]
 
     if(i < bloglinks.length-1){
@@ -158,7 +159,8 @@ function previousblogjozi(){
 
     const bloglinks = [
         '<a href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>',
-        '<a href="JoziBlogs/2020/03/22/Fast-food-and-earthquakes-1.html"> Fast food and earthquakes - Part 1</a>'
+        '<a href="JoziBlogs/2020/03/22/Fast-food-and-earthquakes-1.html"> Fast food and earthquakes - Part 1</a>',
+        '<a href="JoziBlogs/2020/03/15/What-a-DISASTER-2.html"> What a DISASTER - Part2 </a>'
     ]
 
     if(i <= 0){

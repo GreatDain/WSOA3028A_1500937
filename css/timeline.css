@@ -1,0 +1,29 @@
+ol {
+    list-style-type: none;
+}
+
+ol > li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+
+ol > li:before{
+    content: '>';
+    color: #c00;
+    background-color: #c00;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 6px;
+    width: 3px;
+}
+
+ol > li:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 15px;
+    width: 15px;
+}

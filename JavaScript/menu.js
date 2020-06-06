@@ -13,9 +13,9 @@ navigation.innerHTML = [
     // "&nbsp;",
     "<li class=\"menu_li\"><a href=\"./AboutMe/AboutMe.html\"> About Me </a></li>",
     // "&nbsp;",
-    "<li class=\"menu_li\"><a href=\"./Blogs/DainBlog.html\"> Dain's Entries </a></li>",
+    "<li class=\"menu_li\"><a href=\"./Blogs/DainBlog.html\"> Dain's Content </a></li>",
     // "&nbsp;",
-    "<li class=\"menu_li\"><a href=\"./JoziBlogs/JoziBlog.html\"> Jozi's Entries </a></li>",
+    "<li class=\"menu_li\"><a href=\"./JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
     "</ul>",
     "</nav>",
 
@@ -29,8 +29,8 @@ if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.htm
         "<ul>",
         "<li class=\"menu_li\"><a href=\"../index.html\"> Home </a></li>",
         "<li class=\"menu_li\"><a href=\"../AboutMe/AboutMe.html\"> About Me </a></li>",
-        "<li class=\"menu_li\"><a href=\"../Blogs/DainBlog.html\"> Dain's Entries </a></li>",
-        "<li class=\"menu_li\"><a href=\"../JoziBlogs/JoziBlog.html\"> Jozi's Entries </a></li>",
+        "<li class=\"menu_li\"><a href=\"../Blogs/DainBlog.html\"> Dain's Content </a></li>",
+        "<li class=\"menu_li\"><a href=\"../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");
@@ -42,8 +42,8 @@ else if (document.URL.includes("Blogs") || document.URL.includes("OtherEntries")
         "<ul>",
         "<li class=\"menu_li\"><a href=\"../../../../index.html\"> Home </a></li>",
         "<li class=\"menu_li\"><a href=\"../../../../AboutMe/AboutMe.html\"> About Me </a></li>",
-        "<li class=\"menu_li\"><a href=\"../../../../Blogs/DainBlog.html\"> Dain's Entries </a></li>",
-        "<li class=\"menu_li\"><a href=\"../../../../JoziBlogs/JoziBlog.html\"> Jozi's Entries </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../../../Blogs/DainBlog.html\"> Dain's Content </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../../../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");
