@@ -1,6 +1,5 @@
 const navigation = document.getElementById("navigation_bar");
 
-if(document.URL.includes("index.html")){
 navigation.innerHTML = [
     // "<nav>",
     // "<a class=\"flag\" href=\"index.html\"> <img src=\"../../../../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png\" alt=\"Flag of Johannesburg\" width=\"200px\" height=\"100px\"></a>",
@@ -20,8 +19,8 @@ navigation.innerHTML = [
     "</nav>",
 
 ].join("\n");
-} 
-else if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.html") || document.URL.includes("JoziBlog.html")){
+
+if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.html") || document.URL.includes("JoziBlog.html")){
     navigation.innerHTML = [
         "<h1 class=\"name_border\"> <a class=\"name\" href=\"../index.html\"> <img class=\"flag\" src=\"../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png\" alt=\"Flag of Johannesburg\" width=\"80px\" height=\"40px\"> JOZI LIFE </a></h1>",
         "<nav>",
