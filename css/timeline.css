@@ -10,33 +10,31 @@ ol {
 ol > li {
     position: relative;
     margin: 0;
-    padding-bottom: 1em;
-    padding-left: 20px;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
     font-size: 22px;
     padding-bottom: 2.5rem;
 }
 
 ol > li:before{
     content: '>';
-    color: #c00;
-    background-color: #c00;
+    color: red;
+    background-color: red;
     position: absolute;
     bottom: 0;
     top: 0;
-    left: 6px;
-    width: 3px;
+    left: 0.25rem;
+    width: 0.2rem;
 }
 
 ol > li:after{
-    content: '';
     position: absolute;
     left: 0;
-    height: 15px;
-    width: 15px;
+    height: 10rem;
+    width: 10rem;
 }
 
 ol > li > a{
-    font-size: 15px;
     text-decoration: none;
     padding: 0;
     margin: 0;
