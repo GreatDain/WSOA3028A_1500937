@@ -38,6 +38,7 @@ h3{
 }
 
 button{
+    font-size: 12px;
     background-color: #8f8f8f;
     color: #000000;
     border: none;
@@ -59,6 +60,13 @@ button:hover{
 
 .recents{
     color: darkblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.recents:hover{
+    color: #007e45;
+    border-radius: 0.5rem;
 }
 
 .container{

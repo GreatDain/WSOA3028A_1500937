@@ -1,6 +1,8 @@
 html{
     background-image: url(../Images/clqlz7egu7c0ecwwdtq0.png);
     background-position-x: 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .name_border{
