@@ -35,7 +35,7 @@ if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.htm
         "</nav>",
     ].join("\n");
 }
-else if (document.URL.includes("Blogs") || document.URL.includes("OtherEntries") || document.URL.includes("JoziBlog")){
+else if (document.URL.includes("Blogs") || document.URL.includes("JoziBlog")){
     navigation.innerHTML = [
         "<h1 class=\"name_border\"> <a class=\"name\" href=\"../../../../index.html\"> <img class=\"flag\" src=\"../../../../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png\" alt=\"Flag of Johannesburg\" width=\"80px\" height=\"40px\"> JOZI LIFE </a></h1>",
         "<nav>",
@@ -44,6 +44,19 @@ else if (document.URL.includes("Blogs") || document.URL.includes("OtherEntries")
         "<li class=\"menu_li\"><a href=\"../../../../AboutMe/AboutMe.html\"> About Me </a></li>",
         "<li class=\"menu_li\"><a href=\"../../../../Blogs/DainBlog.html\"> Dain's Content </a></li>",
         "<li class=\"menu_li\"><a href=\"../../../../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
+        "</ul>",
+        "</nav>",
+    ].join("\n");
+}
+else if ( document.URL.includes("OtherEntries")){
+    navigation.innerHTML = [
+        "<h1 class=\"name_border\"> <a class=\"name\" href=\"../../index.html\"> <img class=\"flag\" src=\"../../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png\" alt=\"Flag of Johannesburg\" width=\"80px\" height=\"40px\"> JOZI LIFE </a></h1>",
+        "<nav>",
+        "<ul>",
+        "<li class=\"menu_li\"><a href=\"../../index.html\"> Home </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../AboutMe/AboutMe.html\"> About Me </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../Blogs/DainBlog.html\"> Dain's Content </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");
