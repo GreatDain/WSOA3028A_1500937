@@ -48,6 +48,7 @@
                 <button onclick="combine3words()"> Press for 3 words result </button>
 
                 <p id="output"> </p>
+                <p class="maperror" id="error"> </p>
 
                 <p id="3words"> Top 3 closest word matches: </p>
                 <p id="coords"> Coordinates: </p>
@@ -75,20 +76,9 @@
                 <div class="map" id='map' style='width: 700px; height: 550px; margin: auto;' ></div>
 
                 <script>
-                    defaultmap();
-                    // mapboxgl.accessToken = 'pk.eyJ1IjoiMTUwMDkzNyIsImEiOiJja2J4cWI0ajEwcTE3MnFtc2Q5ZGZzMDA5In0.bz8yNuJ4cfmz0PqtUftnqA';
-                    // let map = new mapboxgl.Map({
-                    // container: 'map',
-                    // style: 'mapbox://styles/mapbox/streets-v11',
-                    // center: [28.0473,-26.2041],
-                    // zoom: 12
-                    // });
-
-                    // let marker = new mapboxgl.Marker()
-                    // .setLngLat([28.0473,-26.2041])
-                    // .addTo(map);
-
-                    // map.addControl(new mapboxgl.NavigationControl());
+                    window.onload = function(){
+                        defaultmap();
+                    }
                 </script>
 
             </section>

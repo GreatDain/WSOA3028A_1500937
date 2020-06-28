@@ -33,6 +33,8 @@ function combine3words(){
 
     let output = document.getElementById("output").value;
 
+    document.getElementById("output").innerHTML = "Your entries: " + input1 + '.' + input2 + '.' + input3;
+
     what3words.api.autosuggest(output, {
     clipToCountry: ["ZA"],
     nResults: 1,
@@ -67,6 +69,7 @@ function combine3words(){
     });
 })
 .catch(function(error){
+    document.getElementById('error').innerHTML = "The words entered are invalid or the location does not exist.";
     console.log("[code]", error.code);
     console.log("[message]", error.message);
 });
@@ -80,6 +83,7 @@ function clear3words(){
     document.getElementById("coords").innerHTML = "Coordinates: ";
     document.getElementById("3words").innerHTML = "Top 3 closest word matches: ";
     document.getElementById("nearest").innerHTML = "Nearest Place: ";
+    document.getElementById('error').innerHTML = "";
 
     defaultmap();
 }

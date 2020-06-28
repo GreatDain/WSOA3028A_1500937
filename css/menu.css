@@ -82,6 +82,11 @@ body{
     padding-top: 170px;
 }
 
+.maperror{
+    color: red;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 950px) {
     .top{
         padding-top: 200px;
