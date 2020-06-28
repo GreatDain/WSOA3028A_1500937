@@ -57,7 +57,7 @@ nav > ul > li {
 }
 
 nav > ul >li:hover{
-    font-size: 1.15rem;
+    font-size: 1.15rem !important;
 }
 
 li > a{
