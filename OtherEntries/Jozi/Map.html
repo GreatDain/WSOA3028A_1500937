@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="Decription" content="Jozi Life: Home Page">
+        <meta name="keywords" content="Johannesburg,Blog,South Africa,Jozi,Joburg,Jozi Life">
+        <meta name="author" content="Jozi">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../css/menu.css"/>
+        <link rel="stylesheet" href="../../css/main.css"/>
+        <link rel="icon" href="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
+        <title> Map - Jozi Life </title>
+    </head>
+
+    <body>
+        <header id = "navigation_bar">
+            <script src="../../JavaScript/menu.js"></script>
+        </header>
+
+        <section class="top">
+
+            <p> Enter one word in each of the boxes below to find the specific coordinate location associated to those 3 words in South Africa.</p>
+
+            <section align="center">
+                <input type="text" id="word1" value="Enter first word">
+                <input type="text" id="word2" value="Enter second word">
+                <input type="text" id="word3" value="Enter third word">
+
+                <button onclick="combine3words()"> Press for 3 words result </button>
+                <button onclick="clear3words()"> RESET </button>
+
+                <p class="maperror" id="error"> </p>
+
+                <div class="what3words">
+
+                    <p id="output"> </p>
+
+                    <p id="3words"> Top 3 closest word matches: </p>
+                    <p id="coords"> Coordinates: </p>
+                    <p id="nearest">Nearest Place: </p>
+
+                </div>
+    
+                <script src ="../../JavaScript/threewords.js"></script>
+                <script src="https://assets.what3words.com/sdk/v3/what3words.js?key=9NFCLC66"> </script>
+
+                <!-- pk.eyJ1IjoiMTUwMDkzNyIsImEiOiJja2J4cWI0ajEwcTE3MnFtc2Q5ZGZzMDA5In0.bz8yNuJ4cfmz0PqtUftnqA -->
+
+                <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+                <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+                <!-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+                <link
+                    rel="stylesheet"
+                    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+                    type="text/css"
+                />
+                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> -->
+
+                <div id='map' style='width: 400px; height: 300px; margin: auto;'></div>
+
+                <script>
+                    window.onload = function(){
+                        defaultmap();
+                    }
+                </script>
+
+            </section>
+
+            <footer>
+                <p>Word locations by <a href="https://what3words.com/" target="blank"> what3words.com </a></p>
+                Background Image Credits: https://www.once.travel/tour/graffiti-tour-braamfontein/
+            </footer>
+    </body>
+</html>

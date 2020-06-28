@@ -38,85 +38,7 @@
 
         <section class="top">
 
-            <p> Enter one word in each of the boxes below to find the specific coordinate location associated to those 3 words in South Africa.</p>
-
-            <section align="center">
-                <input type="text" id="word1" value="Enter first word">
-                <input type="text" id="word2" value="Enter second word">
-                <input type="text" id="word3" value="Enter third word">
-
-                <button onclick="combine3words()"> Press for 3 words result </button>
-
-                <p id="output"> </p>
-                <p class="maperror" id="error"> </p>
-
-                <p id="3words"> Top 3 closest word matches: </p>
-                <p id="coords"> Coordinates: </p>
-                <p id="nearest">Nearest Place: </p>
-    
-                <script src ="JavaScript/threewords.js"></script>
-                <script src="https://assets.what3words.com/sdk/v3/what3words.js?key=9NFCLC66"> </script>
-
-                <!-- pk.eyJ1IjoiMTUwMDkzNyIsImEiOiJja2J4cWI0ajEwcTE3MnFtc2Q5ZGZzMDA5In0.bz8yNuJ4cfmz0PqtUftnqA -->
-
-                <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
-                <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
-
-                <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
-                <link
-                    rel="stylesheet"
-                    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
-                    type="text/css"
-                />
-                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
-                <button onclick="clear3words()"> RESET </button>
-
-                <div class="map" id='map' style='width: 700px; height: 550px; margin: auto;' ></div>
-
-                <script>
-                    window.onload = function(){
-                        defaultmap();
-                    }
-                </script>
-
-            </section>
-
             <!-- costs.yawned.official -->
-
-        <div align="center">
-
-            <a class="twitter-timeline"
-                href="https://twitter.com/CityofJoburgZA"
-                data-width="300"
-                data-height="300">
-                Tweets by @CityofJoburgZA
-            </a>
-
-            <a class="twitter-timeline"
-                href="https://twitter.com/CityPowerJhb"
-                data-width="300"
-                data-height="300">
-                Tweets by @CityPowerJhb
-            </a>
-
-            <a class="twitter-timeline"
-            href="https://twitter.com/MyJRA"
-            data-width="300"
-            data-height="300">
-            Tweets by @MyJRA
-            </a>
-
-            <a class="twitter-timeline"
-            href="https://twitter.com/JohannesburgZA"
-            data-width="300"
-            data-height="300">
-            Tweets by @JohannesburgZA
-            </a>
-
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
 
         <!-- <a class="twitter-timeline" href="https://twitter.com/CityofJoburgZA">@CityofJoburgZA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
@@ -215,6 +137,38 @@
                     <button class="prev_btn" onclick="previousblogjozi()"> PREVIOUS BLOG </button>
                     <button class="next_btn" onclick="nextblogjozi()"> NEXT BLOG </button>
                 </section>
+
+                <div class="tweets">
+                    <a class="twitter-timeline"
+                        href="https://twitter.com/CityofJoburgZA"
+                        data-width="300"
+                        data-height="300">
+                        Tweets by @CityofJoburgZA
+                    </a>
+        
+                    <a class="twitter-timeline"
+                        href="https://twitter.com/MyJRA"
+                        data-width="300"
+                        data-height="300">
+                        Tweets by @MyJRA
+                    </a>
+        
+                    <a class="twitter-timeline"
+                        href="https://twitter.com/JohannesburgZA"
+                        data-width="300"
+                        data-height="300">
+                        Tweets by @JohannesburgZA
+                    </a>
+
+                    <a class="twitter-timeline"
+                        href="https://twitter.com/CityPowerJhb"
+                        data-width="300"
+                        data-height="300">
+                        Tweets by @CityPowerJhb
+                    </a>
+        
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
         </section>
             
             <!--

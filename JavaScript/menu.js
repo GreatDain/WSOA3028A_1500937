@@ -15,6 +15,8 @@ navigation.innerHTML = [
     // "&nbsp;",
     "<li class=\"menu_li\"><a href=\"./JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
     "<li class=\"menu_li\"><a href=\"./Blogs/DainBlog.html\"> Technical Blogs </a></li>",
+    "<li class=\"menu_li\"><a href=\"./OtherEntries/Jozi/Timeline.html\"> Timeline </a></li>",
+    "<li class=\"menu_li\"><a href=\"./OtherEntries/Jozi/Map.html\"> Map </a></li>",
     // "&nbsp;",
     "</ul>",
     "</nav>",
@@ -31,6 +33,8 @@ if (document.URL.includes("AboutMe.html") || document.URL.includes("DainBlog.htm
         "<li class=\"menu_li\"><a href=\"../AboutMe/AboutMe.html\"> About Me </a></li>",
         "<li class=\"menu_li\"><a href=\"../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "<li class=\"menu_li\"><a href=\"../Blogs/DainBlog.html\"> Technical Blogs </a></li>",
+        "<li class=\"menu_li\"><a href=\"../OtherEntries/Jozi/Timeline.html\"> Timeline </a></li>",
+        "<li class=\"menu_li\"><a href=\"../OtherEntries/Jozi/Map.html\"> Map </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");
@@ -44,6 +48,8 @@ else if (document.URL.includes("Blogs") || document.URL.includes("JoziBlog")){
         "<li class=\"menu_li\"><a href=\"../../../../AboutMe/AboutMe.html\"> About Me </a></li>",
         "<li class=\"menu_li\"><a href=\"../../../../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "<li class=\"menu_li\"><a href=\"../../../../Blogs/DainBlog.html\"> Technical Blogs </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../../../OtherEntries/Jozi/Timeline.html\"> Timeline </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../../../OtherEntries/Jozi/Map.html\"> Map </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");
@@ -57,6 +63,8 @@ else if ( document.URL.includes("OtherEntries")){
         "<li class=\"menu_li\"><a href=\"../../AboutMe/AboutMe.html\"> About Me </a></li>",
         "<li class=\"menu_li\"><a href=\"../../JoziBlogs/JoziBlog.html\"> Jozi's Content </a></li>",
         "<li class=\"menu_li\"><a href=\"../../Blogs/DainBlog.html\"> Technical Blogs </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../OtherEntries/Jozi/Timeline.html\"> Timeline </a></li>",
+        "<li class=\"menu_li\"><a href=\"../../OtherEntries/Jozi/Map.html\"> Map </a></li>",
         "</ul>",
         "</nav>",
     ].join("\n");

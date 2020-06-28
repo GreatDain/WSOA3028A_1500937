@@ -87,6 +87,20 @@ body{
     font-weight: bold;
 }
 
+.tweets{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* .map{
+    float: right;
+} */
+
+/* .what3words{
+    float: left;
+    margin: auto;
+} */
+
 @media only screen and (max-width: 950px) {
     .top{
         padding-top: 200px;
