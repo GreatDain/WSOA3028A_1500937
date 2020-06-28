@@ -96,7 +96,7 @@ button:hover{
 }
 
 .testbutton{
-    margin: auto;
+    margin: auto !important;
 }
 
 .prev{
