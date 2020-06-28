@@ -11,6 +11,8 @@
         <link rel="icon" href="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
         <title> Home - Jozi Life </title>
         <script src="./index.js"></script>
+        <script src="./jozi.js"></script>
+        <!-- <script src="./JavaScript/threewords.js"></script> -->
     </head>
     <body>
         <header id = "navigation_bar">
@@ -34,11 +36,107 @@
 
         </header>
 
+        <section class="top">
+
+            <p> Enter one word in each of the boxes below to find the specific coordinate location associated to those 3 words in South Africa.</p>
+
+            <section align="center">
+                <input type="text" id="word1" value="Enter first word">
+                <input type="text" id="word2" value="Enter second word">
+                <input type="text" id="word3" value="Enter third word">
+
+                <button onclick="combine3words()"> Press for 3 words result </button>
+
+                <p id="output"> </p>
+
+                <p id="3words"> Top 3 closest word matches: </p>
+                <p id="coords"> Coordinates: </p>
+                <p id="nearest">Nearest Place: </p>
+    
+                <script src ="JavaScript/threewords.js"></script>
+                <script src="https://assets.what3words.com/sdk/v3/what3words.js?key=9NFCLC66"> </script>
+
+                <!-- pk.eyJ1IjoiMTUwMDkzNyIsImEiOiJja2J4cWI0ajEwcTE3MnFtc2Q5ZGZzMDA5In0.bz8yNuJ4cfmz0PqtUftnqA -->
+
+                <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+                <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+                <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+                <link
+                    rel="stylesheet"
+                    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+                    type="text/css"
+                />
+                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+                <button onclick="clear3words()"> RESET </button>
+
+                <div class="map" id='map' style='width: 700px; height: 550px; margin: auto;' ></div>
+
+                <script>
+                    defaultmap();
+                    // mapboxgl.accessToken = 'pk.eyJ1IjoiMTUwMDkzNyIsImEiOiJja2J4cWI0ajEwcTE3MnFtc2Q5ZGZzMDA5In0.bz8yNuJ4cfmz0PqtUftnqA';
+                    // let map = new mapboxgl.Map({
+                    // container: 'map',
+                    // style: 'mapbox://styles/mapbox/streets-v11',
+                    // center: [28.0473,-26.2041],
+                    // zoom: 12
+                    // });
+
+                    // let marker = new mapboxgl.Marker()
+                    // .setLngLat([28.0473,-26.2041])
+                    // .addTo(map);
+
+                    // map.addControl(new mapboxgl.NavigationControl());
+                </script>
+
+            </section>
+
+            <!-- costs.yawned.official -->
+
+        <div align="center">
+
+            <a class="twitter-timeline"
+                href="https://twitter.com/CityofJoburgZA"
+                data-width="300"
+                data-height="300">
+                Tweets by @CityofJoburgZA
+            </a>
+
+            <a class="twitter-timeline"
+                href="https://twitter.com/CityPowerJhb"
+                data-width="300"
+                data-height="300">
+                Tweets by @CityPowerJhb
+            </a>
+
+            <a class="twitter-timeline"
+            href="https://twitter.com/MyJRA"
+            data-width="300"
+            data-height="300">
+            Tweets by @MyJRA
+            </a>
+
+            <a class="twitter-timeline"
+            href="https://twitter.com/JohannesburgZA"
+            data-width="300"
+            data-height="300">
+            Tweets by @JohannesburgZA
+            </a>
+
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <!-- <a class="twitter-timeline" href="https://twitter.com/CityofJoburgZA">@CityofJoburgZA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
         <aside>
             <p>
                 <!-- Hi Fren -->
             </p>
         </aside>
+
+        <section class="aboutme">
 
             <nav>
                 <h2>
@@ -49,15 +147,16 @@
             <section>
                 <article>
                     <p>
-                        I am the spirit of the city of Johannesburg, you can call me Jozi. I have this strange ability to randomly enter people's bodies but I control who I inhabit. I can experience their thoughts, actions and senses just for a few hours. And I'm here to tell you about my weird and wonderful-ish experiences living the lives of my inhabitants. Sit back, grab some popcorn and enjoy the exploration of my webpage. (NB! Be careful not to mess your devices with the popcorn flavouring)
+                        I am the spirit of the city of Johannesburg, you can call me Jozi. I have this strange ability to randomly enter people's bodies but I control who I inhabit. I can experience their thoughts, actions and senses just for a few hours. And I'm here to tell you about my weird and wonderful-ish experiences living the lives of my inhabitants. I also have a huge interest in the history of Johannesburg, as one would expect, and I would like to share that interest with you. Sit back, grab some popcorn and enjoy the exploration of my webpage. (NB! Be careful not to mess your devices with the popcorn flavouring).
                     </p>
                 </article>
             </section>
+        </section>
 
-            
+        <section class="techblogs">
             <nav>
                 <h2>
-                    <li> <a href="Blogs/DainBlog.html"> Dain's Content </a> </li>
+                    <li> <a href="Blogs/DainBlog.html"> Technical Blogs </a> </li>
                 </h2>
             </nav>
             
@@ -68,19 +167,41 @@
 
                 <section class="container">
                 
-                    <a class="recents" id = "blog1" href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a>
+                    <!-- <a class="recents" id = "blog1" href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a> -->
+
+                    <section class="testsection">
+                        <div class="testcontain">
+                            <div class="content">
+                                <div class="testbutton">
+                                    <button class="prev" onclick="prev()"> < </button>
+                                    <button class="next" onclick="next()"> > </button>
+                                </div>
+                                <div class="block" align="center" id="blog">
+                                    
+                                    <a href="Blogs/2020/02/17/blog1.html"> Decisions Decisions </a> <br> <p class = "preview"> ‘The Garden of Forking Paths’ is a short story written in 1941 by the writer and poet Jorge Luis Borges. The story revolves around the idea of all possible outcomes of quantum measurements being realized in the physical world, this is known as the many-worlds interpretation (MWI). Borges’ take on this theory has inspired many new media scholars... </p>
+            
+                                    <!-- <a href="Blogs/2020/02/18/blog2.html"> Character Decription (Updated) </a> <br> <p class = "preview"> My character, named Jozi, is quite literally meant to be the personification of the city of Johannesburg during the city’s most successful time. We always say that we want to be an older self that would make our younger selves proud of and look up to. So here we have Jozi’s younger self looking at the older version of himself, that being the present day we live in, and writing about what he has become, what is he proud of and what he is ashamed of, what he is like today compared to what he dreamed of becoming, these types of things. To do this he has created a character profile website on which he will share his thoughts in the form of blog posts and provide interesting pieces of historical information he (the city) has gone through...</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                 </section>
-                <section class="buttons">
+                <!-- <section class="buttons">
                     <button class="prev_btn" onclick="previousblogdain()"> PREVIOUS BLOG </button>
                     <button class="next_btn" onclick="nextblogdain()"> NEXT BLOG </button>
-                </section>
+                </section> -->
+        </section>
 
+
+        <section class="joziblogs">
             <nav>
                 <h2>
                     <li> <a href="JoziBlogs/JoziBlog.html"> Jozi's Content </a> </li>
                 </h2>
             </nav>
+
+
 
                 <h3> 
                     Recent Entries by Jozi:
@@ -104,6 +225,7 @@
                     <button class="prev_btn" onclick="previousblogjozi()"> PREVIOUS BLOG </button>
                     <button class="next_btn" onclick="nextblogjozi()"> NEXT BLOG </button>
                 </section>
+        </section>
             
             <!--
                 <p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
@@ -113,6 +235,8 @@
 
         <img src="https://ewedit.files.wordpress.com/2019/12/baby-yoda-3.jpg">
         -->
+    </section>
+
         <footer>
             Background Image Credits: https://www.once.travel/tour/graffiti-tour-braamfontein/
         </footer>

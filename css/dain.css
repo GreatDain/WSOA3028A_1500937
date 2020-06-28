@@ -43,7 +43,7 @@ h3 {
 }
 
 .preview_box{
-    width: 50%;
+    max-width: 60%;
     margin: auto;
     padding: 0.5rem;
     border-radius: 3.5rem;
@@ -54,3 +54,9 @@ h3 {
     /* background-color: rgba(0, 72, 139, 0.178); */
     background-color: ghostwhite;
 }
+
+@media only screen and (max-width: 950px) {
+    .preview_box{
+        max-width: 100%;
+    }
+ }
