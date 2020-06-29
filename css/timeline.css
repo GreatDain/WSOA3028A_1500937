@@ -41,9 +41,17 @@ ol > li > a{
     font-size: 22px;
 }
 
+ol > li > a:hover{
+    text-decoration: underline;
+}
+
 .warning{
     color: darkred !important;
     font-size: 18px;
     text-decoration: underline;
     padding: 0.5rem;
+}
+
+.green{
+    color: #007e45;
 }
