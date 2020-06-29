@@ -58,6 +58,7 @@ nav > ul > li {
 
 nav > ul >li:hover{
     font-size: 1.15rem !important;
+    text-decoration: overline;
 }
 
 li > a{
@@ -66,6 +67,9 @@ li > a{
     padding: 0.35rem;
     margin: 0.3rem;
     font-weight: bold !important;
+    text-decoration: none;
+    /* text-decoration-color: #ffcc00; */
+    text-decoration-color: red;
 }
 
 footer{

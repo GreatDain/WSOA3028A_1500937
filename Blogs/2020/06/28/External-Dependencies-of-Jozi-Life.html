@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="../../../../css/menu.css"/>
+        <link rel="stylesheet" href="../../../../css/blog.css"/>
+        <link rel="icon" href="../../../../AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
+        <title> Jozi Life </title>
+        <script src="../../../../index.js"></script>
+    </head>
+    <body>
+        <header align = "center">
+            <section id = "navigation_bar"> </section>
+
+            <script src="../../../../JavaScript/menu.js"></script>
+
+            <button onclick="backbutton()"> Back </button>
+        </header>
+
+        <section class="top">
+
+            <article>
+
+                <h2 align="center">
+                    External Dependencies of Jozi life.
+                </h2>
+
+                <p>
+                    The API’s chosen for Jozi Life were from Twitter, what3words, and Mapbox. Each of these API’s has a significant part to play in reinforcing and enhancing the character who is being portrayed (Jozi) and the feel of the website. Each of these choices will be discussed in depth so that users of the website and readers of this blog understand the thought process behind them. 
+                </p>
+
+                <p>
+                    The Twitter API, a well known and easy to use API that many of us have seen on countless websites. Twitter has many accounts that provide tweets and news, weather, traffic, etc. I chose this API because I believe it to be relevant to providing character content to my site. As this is a profile website for the personification of Johannesburg it seemed apt to use the API to display tweets from the official accounts of the city itself or any account that provides relevant content. This was necessary to the fleshing out of my character and making more obvious to users who Jozi is exactly. Twitter has a consistent stream of tweets produced by its users, a lot of which are available to the public. Many other social media websites might require you to follow a person or join a group to see the content, but most twitter accounts do not. Twitter also allows users to show other’s tweets on your account which means that finding relevant content would be easier. By displaying all tweets from a Johannesburg account, I can also show the retweets from other accounts that mention Johannesburg as well without having to search for them myself.
+                </p>
+
+                <p>
+                    I was no able to pull data that I would like by searching through twitter as a server is required to use the API in this way, so the twitter widget had to be used in order to display tweets. The API is important in that many users are familiar with it and there are many twitter users around the world. Many will know how to use the twitter feed on the website and might enjoy it due to a love of twitter and the various topics of discussion and information it provides. Another API that may serve a similar purpose would be the Facebook API. 
+                </p>
+
+                <p>
+                    The next API used is probably not a familiar one, but it is a website that I personally find to be interesting. What3words.com is basically a world map on which the developers have assigned every 3m square in the world a unique 3-word address. This allows people to find locations by using the 3 words associated to that specific geographic location. The words are associated to coordinates of latitude and longitude so are very accurate. This makes it easier for users to pinpoint a precise location rather than a generalised area. For example, if you’re prone to losing your car in a parking lot, you could use what3words to find the exact geographical block that you parked in by finding the words associated to that coordinate before leaving the car behind, and searching for that location using the words when looking for the car again later. Because of this interesting approach to location I decided to use it to allow users to search for random words and find the exact coordinate location associated to those words (or the closest words) within South Africa alone.
+                </p>
+
+                <p>
+                    This interaction might seem pointless to many, but some might find its implementation and spark an interest in what3words and their quite impressive creation of a different location service. I believe the implementation to be useful in creating an interactive, interesting, and different experience to the user. It adds a sense of fun. This, in addition to the Mapbox API, allow Jozi to share historical sites, fun adventures, and restaurants (that serve yummy food) to the user. It is necessary in allowing Jozi to express itself and become a bit more personal with the user by sharing love for the city, history, and the exciting life experiences Johannesburg provides.
+                </p>
+
+                <p>
+                    Mapbox is used solely for map displaying purposes and pinning locations as mentioned above. What3words takes in the users 3 words, converts it to a coordinate location within South Africa, and sends it through to mapbox to pin and display the location on a map. Mapbox is also used to display preset pins of places Jozi finds interesting and wishes to share with people. The alternative to using mapbox would be google maps, but in the spirit of being different I decided on mapbox. 
+                </p>
+
+                <p>
+                    These two API’s working together creates a fun and interactive experience to the user that is quite different from any other. It allows the user to experience something different from the usual location and mapping that we are all accustomed to. It shares with others a creation that I believe to be exciting and technically interesting in its implementation. 
+                </p>
+
+                <p>
+                    Overall, these 3 API’s make the website more useful, interactive, and enjoyable to the user. The are there to further describe Jozi and the fact that Jozi is the city and its people. Jozi is every square meter of the Johannesburg and the cities history is Jozi’s history. 
+                </p>
+
+            </article>
+        </section>
+        <footer>
+            Background Image Credits: https://www.once.travel/tour/graffiti-tour-braamfontein/
+        </footer>
+    </body>
+</html>
