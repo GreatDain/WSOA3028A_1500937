@@ -101,9 +101,9 @@ body{
     cursor: pointer;
 } */
 
-#marker{
-    cursor: pointer;
-}
+.mapboxgl-popup {
+    max-width: 200px;
+    }
 
 /* .map{
     float: right;
