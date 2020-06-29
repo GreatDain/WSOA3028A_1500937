@@ -72,6 +72,14 @@ li > a{
     text-decoration-color: red;
 }
 
+h2 > li > a{
+    text-decoration-color: black;
+}
+
+h2 > li > a:hover{
+    text-decoration-color: #007e45;
+}
+
 footer{
     margin: 1rem;
     font-size: small;
@@ -83,7 +91,7 @@ body{
 }
 
 .top{
-    padding-top: 170px;
+    padding-top: 175px;
 }
 
 .maperror{
@@ -96,6 +104,16 @@ body{
     padding-top: 15px;
 }
 
+section > article{
+    background-color: #ebd5b3;
+    /* background-image: url(../Images/istockphoto-1129386198-612x612.jpg);
+    background-size: cover; */
+    padding: 1rem;
+    border-radius: 5%;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+}
 /* .marker{
     background-image: url(../Images/momo4.jpg.webp);
     background-size: cover;
