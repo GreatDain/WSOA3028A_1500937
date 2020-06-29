@@ -197,9 +197,9 @@ function clear3words(){
     document.getElementById("word2").value = "";
     document.getElementById("word3").value = "";
     document.getElementById("output").innerHTML = "";
-    document.getElementById("coords").innerHTML = "Coordinates: ";
-    document.getElementById("3words").innerHTML = "Top 3 closest word matches: ";
-    document.getElementById("nearest").innerHTML = "Nearest Place: ";
+    document.getElementById("coords").innerHTML = "";
+    document.getElementById("3words").innerHTML = "";
+    document.getElementById("nearest").innerHTML = "";
     document.getElementById('error').innerHTML = "";
 
     defaultmap();

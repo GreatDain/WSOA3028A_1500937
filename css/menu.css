@@ -114,6 +114,27 @@ section > article{
     margin: auto;
     margin-top: 2rem;
 }
+
+.heading1{
+    font-size: 48px;
+}
+
+.heading2{
+    font-size: 36px;
+}
+
+.heading3{
+    font-size: 24px;
+}
+
+.heading4{
+    font-size: 20px;
+}
+
+.bodytext{
+    width: 50%;
+    margin: auto;
+}
 /* .marker{
     background-image: url(../Images/momo4.jpg.webp);
     background-size: cover;
