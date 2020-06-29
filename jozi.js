@@ -1,41 +1,32 @@
-let x = 0;
+let y = 0;
 
-const array = [
-    '<a href="Blogs/2020/02/17/blog1.html"> Decisions Decisions </a> <br> <p class = "preview"> ‘The Garden of Forking Paths’ is a short story written in 1941 by the writer and poet Jorge Luis Borges. The story revolves around the idea of all possible outcomes of quantum measurements being realized in the physical world, this is known as the many-worlds interpretation (MWI). Borges’ take on this theory has inspired many new media scholars... </p>',
-    '<a href="Blogs/2020/02/18/blog2.html"> Character Decription (Updated) </a> <br> <p class = "preview"> My character, named Jozi, is quite literally meant to be the personification of the city of Johannesburg during the city’s most successful time. We always say that we want to be an older self that would make our younger selves proud of and look up to. So here we have Jozi’s younger self looking at the older version of himself, that being the present day we live in, and writing about what he has become, what is he proud of and what he is ashamed of, what he is like today compared to what he dreamed of becoming, these types of things. To do this he has created a character profile website on which he will share his thoughts in the form of blog posts and provide interesting pieces of historical information he (the city) has gone through...</p>',
-    '<a href="Blogs/2020/02/18/blog3.html"> Through the ages of the browser wars </a> <br> <p class = "preview"> 1994, the war begins. Netscape and Internet Explorer begin their fight for supremacy in the First Browser Wars during a time when the world wide web and internet were becoming popular around the globe... </p>',
-    '<a href="Blogs/2020/02/25/blog4.html"> Semantic Markup </a> <br> <p class = "preview"> Using words semantically means using words in the correct context aligning with the meaning of those words, so semantic markup is quite literally using HTML tags that convey some information about the content to follow. It is also for the purpose of dividing content to keep it neat and presentable... </p>',
-    '<a href="Blogs/2020/03/10/JavascriptBlog.html"> Javascript, the "Yes Man" of programming languages </a> <br> <p class = "preview"> Over the past week we have been taught the basics of the Javascript programming language for the purposes of creating this very website you’re reading the blog on. Here is a summary of my understanding of what was learned... </p>',
-    '<a href="Blogs/2020/04/7/FictionalCharacterWritingBlog.html"> My first experiences with fictional blog writing and character development </a> <br> <p class = "preview">  What exactly is a blog? A blog is a website that focuses on developer or character written content. Blogs are often personal but can we about any topic imaginable. There is often a connection between the content creator and the readers or audience through a comments section that allows for there to be an interaction and allows for like-minded people to share their ideas and thoughts... </p>',
-    '<a href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a> <br> <p class = "preview">  Information geography is the existence of information in the physical world. Where this information is found, stored, and created shapes how different parts of the world are understood. Information exists in a material place and is ever evolving and being shaped at that specific location. They start by speaking about space and place and how different groups of people across the globe are trying to impose their narratives of informational augmentations. Who are these people? Why are they the “dominant” force that speaks for others?...  </p>',
-    '<a href="Blogs/2020/05/30/Ethics-Morals-and-Law.html"> Ethics, Morals, and the Law </a> <br> <p class = "preview"> Ethics is the factors (values and principles) that determine one’s process of decision making. Values and principles are what defines what is good and right in our lives. They are the basis for the actions we choose to take. Everyone can reflect on a situation and decide on what is the good, right course of action to take... </p>',
-    '<a href="Blogs/2020/05/30/Online-Learning.html"> Online Learning </a> <br> <p class = "preview"> With the corona virus epidemic taking the world into a new era it is only natural for education, on a global scale, to move onto online platforms, at least for the time being. How should educational institutions approach online learning to get the most out of its students and educators?... </p>',
-    '<a href="Blogs/2020/06/01/Neumorphism-and-Skeuomorphism-in-UI.html"> Neumorphism and Skeuomorphism in UI </a> <br> <p class = "preview"> Skeuomorphism is the design of a user interface that mimics how that/those specific objects function in real life. This can be done by mimicking the way it looks, sounds and by using concepts that the user will recognise. By using familiar objects and concepts the designer can convey to the user how that specific thing should be used... </p>',
-    '<a href="Blogs/2020/06/04/Terminator-AI-Inbound.html"> Terminator AI Inbound? </a> <br> <p class = "preview"> Fama uses AI to screen for what that describe as “undesirable” behaviours. Many companies and institutions have taken on this technology and are using it during their interviewing and screen processes. But the AI is notoriously inexplicable and prone to bias so it is very likely it would entrench existing biases (sexism, racism etc)... </p>',
+const arrayJozi = ['<a href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a> <br> <p class = "preview"> I’ve woken up to a pile of hair in my face. It’s a bit dry. I have the urge to stay in bed, but I also desperately need the bathroom. 15 minutes in and I’m still in bed but my alarm is giving me a headache, so I eventually wake up. Bathroom duties occur as per usual. I brush my teeth and look in the mirror. I’m a 20-year-old girl, apparently… Wait, am I?... My reflection in the mirror looks like a boy, but my body parts say otherwise. So, I’m a confused 20-year-old girl lol...</p>',
+'<a href="JoziBlogs/2020/03/15/What-a-DISASTER-2.html"> What a DISASTER - Part 2 </a> <br> <p class="preview"> We made it to the Gautrain station and walk to towards the platform. The schedule reads “Midrand -20mins”, I’m definitely going to be late. There were many spaces available on the benches, but we sit on a step instead. I will admit, those benches are badly designed, it’s hard not to slowly slide off them. People pass by, some in a hurry, some laid back and relaxed, most dressed in business attire. Some try to talk to us, so we put our earphones in and pretend like they don’t exist. 20 minutes pass by slowly and the train finally arrives... </p>',
+'<a href="JoziBlogs/2020/03/22/Fast-food-and-earthquakes-1.html"> Fast food and earthquakes - Part 1</a> <br> <p class="preview"> So, here is my story about today. It all started at 1pm, my spirit got zapped across the city and into the heart of Sandton. The office I found myself in was quite fancy. Glass desk, black leather couches, large stocked bookshelf, whiskey on a side table next to a seat overlooking Sandton through large glass office windows. There were many awards and fancy paintings on the walls. It was impressive. All fancy things aside, something felt strange, it felt like a weight was being lifted, and it was, quite literally being lifted. A giant gut appeared in my peripherals as I stood up, apparently this was mine for today. Two thoughts popped into my mind, “please let me be a pregnant lady” and “please don’t be a fat guy”. The boobs were there, the belly was there, but so was the beard… I was indeed in the body of a fat guy... </p>',
 ];
 
-function next(){
+function nextjozi(){
 
-    document.getElementById('blog');
+    document.getElementById('blogJozi');
 
-    if(x < array.length - 1){
-        x++;
+    if(y < arrayJozi.length - 1){
+        y++;
     }
     else{
-        x = 0;
+        y = 0;
     }
 
-    document.getElementById('blog').innerHTML = array[x];
+    document.getElementById('blogJozi').innerHTML = arrayJozi[y];
 }
 
-function prev(){
-    document.getElementById('blog');
+function prevjozi(){
+    document.getElementById('blogJozi');
 
-    if(x<=0){
-        x = array.length-1;
+    if(y<=0){
+        y = arrayJozi.length-1;
     }
     else{
-        x--;
+        y--;
     }
-    document.getElementById('blog').innerHTML = array[x];
+    document.getElementById('blogJozi').innerHTML = arrayJozi[y];
 }

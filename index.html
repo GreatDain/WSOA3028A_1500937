@@ -11,6 +11,7 @@
         <link rel="icon" href="AboutMe/Images/1280px-Flag_of_Johannesburg,_South_Africa.svg.png">
         <title> Home - Jozi Life </title>
         <script src="./index.js"></script>
+        <script src="./technical.js"></script>
         <script src="./jozi.js"></script>
         <!-- <script src="./JavaScript/threewords.js"></script> -->
     </head>
@@ -90,7 +91,9 @@
                                 </div>
                                 <div class="block" align="center" id="blog">
                                     
-                                    <a href="Blogs/2020/02/17/blog1.html"> Decisions Decisions </a> <br> <p class = "preview"> ‘The Garden of Forking Paths’ is a short story written in 1941 by the writer and poet Jorge Luis Borges. The story revolves around the idea of all possible outcomes of quantum measurements being realized in the physical world, this is known as the many-worlds interpretation (MWI). Borges’ take on this theory has inspired many new media scholars... </p>
+                                    <!-- <a href="Blogs/2020/02/17/blog1.html"> Decisions Decisions </a> <br> <p class = "preview"> ‘The Garden of Forking Paths’ is a short story written in 1941 by the writer and poet Jorge Luis Borges. The story revolves around the idea of all possible outcomes of quantum measurements being realized in the physical world, this is known as the many-worlds interpretation (MWI). Borges’ take on this theory has inspired many new media scholars... </p> -->
+
+                                    <a href="Blogs/2020/05/28/Close-Reading-Information-Geographies.html"> Close Reading: Towards a study of information geographies </a> <br> <p class = "preview">  Information geography is the existence of information in the physical world. Where this information is found, stored, and created shapes how different parts of the world are understood. Information exists in a material place and is ever evolving and being shaped at that specific location. They start by speaking about space and place and how different groups of people across the globe are trying to impose their narratives of informational augmentations. Who are these people? Why are they the “dominant” force that speaks for others?...  </p>
             
                                     <!-- <a href="Blogs/2020/02/18/blog2.html"> Character Decription (Updated) </a> <br> <p class = "preview"> My character, named Jozi, is quite literally meant to be the personification of the city of Johannesburg during the city’s most successful time. We always say that we want to be an older self that would make our younger selves proud of and look up to. So here we have Jozi’s younger self looking at the older version of himself, that being the present day we live in, and writing about what he has become, what is he proud of and what he is ashamed of, what he is like today compared to what he dreamed of becoming, these types of things. To do this he has created a character profile website on which he will share his thoughts in the form of blog posts and provide interesting pieces of historical information he (the city) has gone through...</p> -->
                                 </div>
@@ -121,51 +124,83 @@
 
                 <section class="container">
 
-                    <a class="recents" href="./OtherEntries/Jozi/Timeline.html"> Timeline of Johannesburg </a>
+                    <section class="testsection">
+                        <div class="testcontain">
+                            <div class="content">
+                                <div class="testbutton">
+                                    <button class="prev" onclick="prevjozi()"> < </button>
+                                    <button class="next" onclick="nextjozi()"> > </button>
+                                </div>
+                                <div class="block" align="center" id="blogJozi">
+                                    
+                                    <a href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a> <br> <p class = "preview"> I’ve woken up to a pile of hair in my face. It’s a bit dry. I have the urge to stay in bed, but I also desperately need the bathroom. 15 minutes in and I’m still in bed but my alarm is giving me a headache, so I eventually wake up. Bathroom duties occur as per usual. I brush my teeth and look in the mirror. I’m a 20-year-old girl, apparently… Wait, am I?... My reflection in the mirror looks like a boy, but my body parts say otherwise. So, I’m a confused 20-year-old girl lol...</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+                <h3> Interesting Content to Check Out: </h3>
+
+                <section class="container">
+                    
+                    <ul><a class="recents" href="./OtherEntries/Jozi/Timeline.html"> Timeline of Johannesburg </a></ul>
+                    
+                    <br>
+                    
+                    <ul><a class="recents" href="./OtherEntries/Jozi/Map.html"> Map of Interesting Local Locations </a></ul>
 
                 </section>
                 
-                <br>
+                <!-- <br> -->
 
-                <section class="container">
+                <!-- <section class="container">
 
                     <a class="recents" id = "joziblog" href="JoziBlogs/2020/03/15/What-a-DISASTER-1.html"> What a DISASTER - Part 1 </a>
     
-                </section>
+                </section> -->
 
-                <section class="buttons">
+                <!-- <section class="buttons">
                     <button class="prev_btn" onclick="previousblogjozi()"> PREVIOUS BLOG </button>
                     <button class="next_btn" onclick="nextblogjozi()"> NEXT BLOG </button>
+                </section> -->
+
+                <h4 align = "center"> TWEETS ABOUT JOHANNESBURG: </h4>
+
+                <section class="container">
+
+                    <div class="tweets">
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/CityofJoburgZA"
+                            data-width="300"
+                            data-height="300">
+                            Tweets by @CityofJoburgZA
+                        </a>
+            
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/MyJRA"
+                            data-width="300"
+                            data-height="300">
+                            Tweets by @MyJRA
+                        </a>
+            
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/JohannesburgZA"
+                            data-width="300"
+                            data-height="300">
+                            Tweets by @JohannesburgZA
+                        </a>
+
+                        <a class="twitter-timeline"
+                            href="https://twitter.com/CityPowerJhb"
+                            data-width="300"
+                            data-height="300">
+                            Tweets by @CityPowerJhb
+                        </a>
+
                 </section>
-
-                <div class="tweets">
-                    <a class="twitter-timeline"
-                        href="https://twitter.com/CityofJoburgZA"
-                        data-width="300"
-                        data-height="300">
-                        Tweets by @CityofJoburgZA
-                    </a>
-        
-                    <a class="twitter-timeline"
-                        href="https://twitter.com/MyJRA"
-                        data-width="300"
-                        data-height="300">
-                        Tweets by @MyJRA
-                    </a>
-        
-                    <a class="twitter-timeline"
-                        href="https://twitter.com/JohannesburgZA"
-                        data-width="300"
-                        data-height="300">
-                        Tweets by @JohannesburgZA
-                    </a>
-
-                    <a class="twitter-timeline"
-                        href="https://twitter.com/CityPowerJhb"
-                        data-width="300"
-                        data-height="300">
-                        Tweets by @CityPowerJhb
-                    </a>
         
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>

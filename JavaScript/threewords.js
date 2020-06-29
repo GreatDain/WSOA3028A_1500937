@@ -130,6 +130,10 @@ function defaultmap(){
 
 function combine3words(){
 
+    document.getElementById("coords").innerHTML = "Coordinates: ";
+    document.getElementById("3words").innerHTML = "Top 3 closest word matches: ";
+    document.getElementById("nearest").innerHTML = "Nearest Place: ";
+
     let input1 = document.getElementById("word1").value;
     let input2 = document.getElementById("word2").value;
     let input3 = document.getElementById("word3").value;
@@ -177,7 +181,7 @@ function combine3words(){
     });
 })
 .catch(function(error){
-    document.getElementById('error').innerHTML = "The words entered are invalid or the location does not exist.";
+    document.getElementById('error').innerHTML = "The words entered are invalid or the location does not exist within South Africa.";
     console.log("[code]", error.code);
     console.log("[message]", error.message);
     document.getElementById("coords").innerHTML = "Coordinates: ";
